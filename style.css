@@ -495,3 +495,186 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:80px
   .form-row{grid-template-columns:1fr}
   .contact-form{padding:36px 24px}
 }
+
+/* =========================================
+   MOBILE FIX - FINAL
+========================================= */
+@media (max-width: 768px){
+
+  body{
+    overflow-x: hidden;
+    cursor: auto;
+  }
+
+  #cur,
+  #cur-ring{
+    display:none !important;
+  }
+
+  nav{
+    padding: 0 16px;
+    height: 70px;
+  }
+
+  .container{
+    padding: 0 16px;
+  }
+
+  .hero,
+  .page-hero,
+  .detail-hero,
+  .about-page-hero,
+  .cta-hero{
+    padding: 110px 16px 60px !important;
+  }
+
+  .hero-content,
+  .page-hero-inner,
+  .detail-hero-left{
+    max-width: 100%;
+  }
+
+  .hero-h1,
+  .page-hero h1,
+  .detail-hero-left h1,
+  h2.display{
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1px !important;
+    word-break: break-word;
+  }
+
+  .hero-desc,
+  .page-hero p,
+  .detail-hero-left p,
+  .body-text{
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-ctas{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-nav{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .detail-hero{
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .detail-hero-right{
+    display: none !important;
+  }
+
+  .services-head,
+  .about-split,
+  .contact-layout,
+  .gov-hero-banner,
+  .case-study-card,
+  .form-row{
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .svc-cards,
+  .team-grid,
+  .values-grid,
+  .private-features,
+  .industries-served,
+  .testi-grid,
+  .numbers-grid,
+  .ind-grid,
+  .client-logos-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-founder-row{
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-founder,
+  .team-card,
+  .svc-card,
+  .testi-card,
+  .contact-form,
+  .founder-card{
+    padding: 28px 20px !important;
+  }
+
+  .team-founder .team-avatar{
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .team-avatar{
+    width: 64px !important;
+    height: 64px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .t-ava{
+    width: 46px !important;
+    height: 46px !important;
+    padding: 5px !important;
+  }
+
+  .metric{
+    width: 100%;
+    padding: 18px 20px !important;
+  }
+
+  .hero-metrics{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .metric-val{
+    font-size: 32px !important;
+  }
+
+  .svc-item{
+    grid-template-columns: 48px 1fr !important;
+    gap: 14px !important;
+    padding: 24px 18px !important;
+  }
+
+  .svc-info h3{
+    font-size: 16px !important;
+  }
+
+  .svc-info p{
+    font-size: 12px !important;
+  }
+
+  .wa{
+    width: 52px;
+    height: 52px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  footer{
+    padding: 50px 16px 24px !important;
+  }
+
+  .footer-top{
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .f-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
