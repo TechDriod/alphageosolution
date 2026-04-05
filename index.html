@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Geo Solution — Global Geospatial Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+<canvas id="canvas"></canvas>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <a href="#" class="logo" data-page="home">
+    <div class="logo-emblem">
+      <svg viewBox="0 0 38 38" fill="none">
+        <circle cx="19" cy="19" r="18.5" stroke="rgba(255,255,255,0.12)"/>
+        <circle cx="19" cy="19" r="12" stroke="rgba(0,180,255,0.3)"/>
+        <circle cx="19" cy="19" r="5" fill="#1a6fff"/>
+        <circle cx="19" cy="19" r="3" fill="#00b4ff"/>
+        <line x1="19" y1="1" x2="19" y2="7" stroke="rgba(0,180,255,0.6)" stroke-width="1.5"/>
+        <line x1="19" y1="31" x2="19" y2="37" stroke="rgba(0,180,255,0.6)" stroke-width="1.5"/>
+        <line x1="1" y1="19" x2="7" y2="19" stroke="rgba(0,180,255,0.6)" stroke-width="1.5"/>
+        <line x1="31" y1="19" x2="37" y2="19" stroke="rgba(0,180,255,0.6)" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-name">Alpha Geo Solution</div>
+      <div class="logo-sub">Geospatial Intelligence</div>
+    </div>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+    <li><a href="#" data-page="services" class="nav-link">Services</a></li>
+    <li><a href="#" data-page="team" class="nav-link">Team</a></li>
+    <li><a href="#" data-page="clients" class="nav-link">Clients</a></li>
+    <li><a href="#" data-page="about" class="nav-link">About</a></li>
+    <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <span class="nav-tel">+91 8290 830 989</span>
+    <button class="btn-nav" data-page="contact">Get a Quote</button>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-mobile" id="closeMobile">✕</button>
+  <a href="#" data-page="home" class="mob-link">Home</a>
+  <a href="#" data-page="services" class="mob-link">Services</a>
+  <a href="#" data-page="team" class="mob-link">Team</a>
+  <a href="#" data-page="clients" class="mob-link">Clients</a>
+  <a href="#" data-page="about" class="mob-link">About</a>
+  <a href="#" data-page="contact" class="mob-link">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE: HOME
+══════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-kicker r"><span class="kicker-line"></span><span class="kicker-text">Jaipur, India &nbsp;·&nbsp; Global Operations</span></div>
+      <h1 class="hero-h1 r r2">Where Data<br>Meets<br><span class="accent-word">the Earth</span><br><span class="italic">Precisely.</span></h1>
+      <p class="hero-desc r r3">Enterprise-grade geospatial intelligence, 3D mapping & digital twin solutions — trusted by Fortune 500 companies, government agencies, and PSUs across the globe.</p>
+      <div class="hero-ctas r r4">
+        <button class="btn-primary" data-page="services">Explore Services</button>
+        <button class="btn-secondary" data-page="about">Our Story →</button>
+      </div>
+      <div class="hero-metrics r">
+        <div class="metric"><div class="metric-val">20<sup>+</sup></div><div class="metric-label">Projects<br>Completed</div></div>
+        <div class="metric"><div class="metric-val">15<sup>+</sup></div><div class="metric-label">Global<br>Clients</div></div>
+        <div class="metric"><div class="metric-val">2<sup>+</sup></div><div class="metric-label">Industry<br>Awards</div></div>
+        <div class="metric"><div class="metric-val">50<sup>+</sup></div><div class="metric-label">Expert<br>Team</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-grid">
+        <div class="orbit-el" style="width:400px;height:400px;top:40px;left:40px;border:1px solid rgba(255,255,255,0.04);border-radius:50%;position:absolute;"><div class="orbit-dot" style="background:var(--accent);box-shadow:0 0 12px var(--accent)"></div></div>
+        <div class="orbit-el" style="width:300px;height:300px;top:90px;left:90px;border:1px solid rgba(0,180,255,0.08);border-radius:50%;position:absolute;animation-duration:15s;"><div class="orbit-dot"></div></div>
+        <div class="hex-center" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+          <svg width="160" height="160" viewBox="0 0 160 160">
+            <defs><radialGradient id="gc" cx="35%" cy="35%"><stop offset="0%" stop-color="#1a6fff" stop-opacity=".4"/><stop offset="100%" stop-color="#00b4ff" stop-opacity=".05"/></radialGradient></defs>
+            <polygon points="80,8 144,44 144,116 80,152 16,116 16,44" fill="url(#gc)" stroke="rgba(0,180,255,0.4)" stroke-width="1"/>
+            <polygon points="80,28 124,52 124,108 80,132 36,108 36,52" fill="rgba(0,180,255,0.05)" stroke="rgba(0,180,255,0.2)" stroke-width="1"/>
+            <circle cx="80" cy="80" r="24" fill="rgba(26,111,255,0.15)" stroke="rgba(0,180,255,0.5)" stroke-width="1"/>
+            <circle cx="80" cy="80" r="10" fill="#1a6fff" opacity=".8"/>
+            <circle cx="80" cy="80" r="5" fill="#00b4ff"/>
+          </svg>
+        </div>
+        <div class="data-chip dc1"><div class="chip-label">ACTIVE SURVEYS</div><div class="chip-val"><span class="chip-dot"></span>5 Live Projects</div></div>
+        <div class="data-chip dc2"><div class="chip-label">ACCURACY RATING</div><div class="chip-val">± 0.02m GSD</div></div>
+        <div class="data-chip dc3"><div class="chip-label">COVERAGE</div><div class="chip-val">23+ Countries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-inner">
+      <div class="marquee-track">
+        <div class="m-item"><span class="m-dot"></span>Survey of India</div>
+        <div class="m-item"><span class="m-dot"></span>Ministry of Railways</div>
+        <div class="m-item"><span class="m-dot"></span>Jaipur Development Authority</div>
+        <div class="m-item"><span class="m-dot"></span>Archaeological Survey</div>
+        <div class="m-item"><span class="m-dot"></span>NHAI</div>
+        <div class="m-item"><span class="m-dot"></span>ONGC</div>
+        <div class="m-item"><span class="m-dot"></span>Coal India</div>
+        <div class="m-item"><span class="m-dot"></span>Esri India</div>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <div class="m-item"><span class="m-dot"></span>Survey of India</div>
+        <div class="m-item"><span class="m-dot"></span>Ministry of Railways</div>
+        <div class="m-item"><span class="m-dot"></span>Jaipur Development Authority</div>
+        <div class="m-item"><span class="m-dot"></span>Archaeological Survey</div>
+        <div class="m-item"><span class="m-dot"></span>NHAI</div>
+        <div class="m-item"><span class="m-dot"></span>ONGC</div>
+        <div class="m-item"><span class="m-dot"></span>Coal India</div>
+        <div class="m-item"><span class="m-dot"></span>Esri India</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NUMBERS -->
+  <section class="numbers-strip section">
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="n-item r"><div class="n-val">20<span class="n-plus">+</span></div><div class="n-label">Projects<br>Delivered</div><div class="n-bar"></div></div>
+        <div class="n-item r r2"><div class="n-val">15<span class="n-plus">+</span></div><div class="n-label">Clients<br>Worldwide</div><div class="n-bar"></div></div>
+        <div class="n-item r r3"><div class="n-val">3<span class="n-plus">+</span></div><div class="n-label">Years of<br>Excellence</div><div class="n-bar"></div></div>
+        <div class="n-item r r4"><div class="n-val">23<span class="n-plus">+</span></div><div class="n-label">Countries<br>Served</div><div class="n-bar"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-section section">
+    <div class="container">
+      <div class="services-head">
+        <div><div class="label r">Our Services</div><h2 class="display r r2">Precision Mapping.<br>Intelligent Data.</h2></div>
+        <div class="services-body r r3"><p class="body-text">From aerial photogrammetry to digital twins — we deliver end-to-end geospatial solutions tailored to your mission-critical requirements.</p><br><button class="btn-outline" data-page="services" style="margin-top:16px">View All Services →</button></div>
+      </div>
+      <div class="svc-list r">
+        <div class="svc-item" data-page="service-3d"><div class="svc-num">01</div><div class="svc-info"><h3>3D Indoor & Outdoor Mapping</h3><p>High-resolution spatial models of buildings, campuses, and urban environments using LiDAR and photogrammetry.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-locint"><div class="svc-num">02</div><div class="svc-info"><h3>Location Intelligence & GIS</h3><p>Analytical geospatial platforms delivering business insights, network planning, and site intelligence.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-digital"><div class="svc-num">03</div><div class="svc-info"><h3>Digital Twin Development</h3><p>Physics-accurate virtual replicas of infrastructure and terrain for simulation, monitoring, and planning.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-topo"><div class="svc-num">04</div><div class="svc-info"><h3>Topographic & Cadastral Mapping</h3><p>Large-scale terrain surveys, DEM/DSM generation, and land parcel boundary documentation.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-aero"><div class="svc-num">05</div><div class="svc-info"><h3>Aerial Triangulation & Stereo Compilation</h3><p>Advanced photogrammetric processing from aerial and satellite imagery with rigorous QA/QC.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-lidar"><div class="svc-num">06</div><div class="svc-info"><h3>LiDAR Data Processing</h3><p>Point cloud classification, feature extraction, and derivative product generation from airborne and mobile LiDAR datasets.</p></div><div class="svc-arrow">↗</div></div>
+        <div class="svc-item" data-page="service-BIM"><div class="svc-num">07</div><div class="svc-info"><h3>BIM Modelling</h3><p>Intelligent 3D building models for design coordination, clash detection, quantity takeoff, and lifecycle asset management.</p></div><div class="svc-arrow">↗</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SPLIT -->
+  <section class="about-split section" id="about-home">
+    <div class="about-dark">
+      <div class="label r">Who We Are</div>
+      <h2 class="display r r2" style="margin-bottom:24px;">Built on<br>Precision.<br>Driven by<br><em style="font-style:italic;color:var(--glow)">Innovation.</em></h2>
+      <p class="body-text r r3" style="margin-bottom:40px">Alpha Geo Solution, headquartered in Jaipur, India, is a globally recognised leader in digital geospatial information and services. We deliver comprehensive spatial insights to Fortune 500 clients, PSUs, and government agencies — transforming how organisations interact with location data.</p>
+      <div class="feat-list r r4">
+        <div class="feat-row"><div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="feat-txt"><h4>Enterprise-Grade Quality</h4><p>ISO-compliant workflows with rigorous QA/QC at every stage of data production and delivery.</p></div></div>
+        <div class="feat-row"><div class="feat-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="feat-txt"><h4>Global Reach, Local Expertise</h4><p>Proven track record serving clients across India, the Middle East, South-East Asia, and Europe.</p></div></div>
+        <div class="feat-row"><div class="feat-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="feat-txt"><h4>Cloud-First Architecture</h4><p>Scalable, real-time geospatial data management on modern cloud platforms for rapid deployment.</p></div></div>
+      </div>
+    </div>
+    <div class="about-light">
+      <div class="founder-card r">
+        <div class="founder-row"><div class="f-avatar"><img src="image/photo.jpg" alt="Divya Swarnkar"></div><div><div class="f-name">Divya Swarnkar</div><div class="f-title">Founder & CEO, Alpha Geo Solution</div></div></div>
+        <p class="f-quote">"My goal was to bridge the gap between cutting-edge technology and the world of geospatial and engineering solutions — empowering industries with data-driven insights and sustainable solutions that endure."</p>
+      </div>
+      <div class="hq-pill r r2">
+        <div class="hq-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="hq-text"><strong>Headquarters — Jaipur, India</strong>405, 406 Arihant Plaza Malviya Nagar, Jaipur Rajasthan 302017<br><a href="mailto:info@alphageosolution.com">info@alphageosolution.com</a> · +91 8290 830 989</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES --> 
+  <section class="ind-section section">
+    <div class="container">
+      <div class="r"><div class="label">Industries We Serve</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end">
+        <h2 class="display r r2">Built for<br>Every Sector</h2>
+        <p class="body-text r r3">Our geospatial expertise spans a wide range of industries — from national mapping agencies to smart city authorities.</p>
+      </div>
+      <div class="ind-grid r">
+        <div class="ind-cell"><div><div class="ind-n">01</div><div class="ind-name">Government &amp; Defence</div><div class="ind-desc">National mapping, strategic surveys, border documentation & land records.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">02</div><div class="ind-name">Railways &amp; Transport</div><div class="ind-desc">Corridor mapping, asset tracking & route optimisation systems.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">03</div><div class="ind-name">Mining &amp; Resources</div><div class="ind-desc">Volumetric surveys, exploration mapping & operational safety monitoring.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">04</div><div class="ind-name">Urban Planning</div><div class="ind-desc">Smart city 3D models, zoning & development authority datasets.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">05</div><div class="ind-name">Watershed &amp; Environment</div><div class="ind-desc">Drainage modelling, conservation mapping & climate risk assessments.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">06</div><div class="ind-name">AEC &amp; Construction</div><div class="ind-desc">BIM-ready surveys, site modelling & construction progress monitoring.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">07</div><div class="ind-name">Telecom &amp; Utilities</div><div class="ind-desc">Network planning, tower siting & pipeline corridor analysis.</div></div><div class="ind-arrow">↗</div></div>
+        <div class="ind-cell"><div><div class="ind-n">08</div><div class="ind-name">Heritage &amp; Archaeology</div><div class="ind-desc">Site documentation, 3D preservation & cultural heritage digitisation.</div></div><div class="ind-arrow">↗</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section section">
+    <div class="container">
+      <div class="r"><div class="label">How We Work</div></div>
+      <h2 class="display r r2" style="margin-bottom:0">Our Proven<br>Process</h2>
+      <div class="process-steps r">
+        <div class="proc-step"><div class="proc-circle">01</div><div class="proc-title">Discovery</div><div class="proc-body">We understand your project scope, data requirements, and operational objectives in depth.</div></div>
+        <div class="proc-step"><div class="proc-circle">02</div><div class="proc-title">Data Acquisition</div><div class="proc-body">Aerial, LiDAR, satellite, or field survey data is captured using the optimal technology stack.</div></div>
+        <div class="proc-step"><div class="proc-circle">03</div><div class="proc-title">Processing</div><div class="proc-body">Photogrammetry, triangulation, and classification pipelines transform raw data into precision products.</div></div>
+        <div class="proc-step"><div class="proc-circle">04</div><div class="proc-title">QA / QC</div><div class="proc-body">Multi-tier accuracy verification and ISO-compliant quality control before any delivery.</div></div>
+        <div class="proc-step"><div class="proc-circle">05</div><div class="proc-title">Delivery</div><div class="proc-body">Cloud or local delivery in your required format — GIS-ready, BIM-compatible, or custom outputs.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-section section">
+    <div class="container">
+      <div class="r"><div class="label">Client Testimonials</div></div>
+      <h2 class="display r r2">Trusted by<br>Leading Institutions</h2>
+      <div class="testi-grid">
+        <div class="testi-card r r2"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Their precision mapping helped us preserve and document heritage sites with unparalleled accuracy. The team's professionalism sets them apart from any geospatial vendor we have engaged globally.</p><div class="t-author"><div class="t-ava"><img src="image/Archaeological.png" alt="Archaeological Department Logo"></div><div><div class="t-name">Archaeological Department</div><div class="t-org">Government of Rajasthan</div></div></div></div>
+        <div class="testi-card r r3"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Alpha Geo Solution's 3D mapping services have been instrumental in shaping our city's urban planning projects. Their data quality and turnaround time are exceptional by any global standard.</p><div class="t-author"><div class="t-ava"><img src="image/JDA.png" alt="Jaipur Development Authority Logo"></div><div><div class="t-name">Jaipur Development Authority</div><div class="t-org">Urban Planning Division</div></div></div></div>
+        <div class="testi-card r r2"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Accurate, timely, and thoroughly professional. Alpha Geo Solution exceeded our expectations in every survey project — a truly reliable long-term strategic partner.</p><div class="t-author"><div class="t-ava"><img src="image/SOI.png" alt="Survey of India Logo"></div><div><div class="t-name">Survey of India</div><div class="t-org">National Mapping Organisation</div></div></div></div>
+        <div class="testi-card r r3"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Their advanced geospatial services streamlined our infrastructure development with accurate, detailed mapping that integrated seamlessly across all of our platforms and internal workflows.</p><div class="t-author"><div class="t-ava"><img src="image/Railways.svg" alt="Railway Department Logo"></div><div><div class="t-name">Railway Department</div><div class="t-org">Ministry of Railways, India</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-hero section">
+    <div class="label r" style="justify-content:center">Start a Project</div>
+    <h2 class="display r r2" style="text-align:center;max-width:800px;margin:0 auto 20px">Let's Map Your<br>Next Big Project.</h2>
+    <p class="body-text r r3" style="text-align:center;max-width:480px;margin:0 auto 52px">Tell us about your geospatial challenge. Our expert team will respond within 24 hours with a tailored proposal.</p>
+    <div class="hero-ctas r r4" style="justify-content:center">
+      <button class="btn-primary" data-page="contact">Request a Consultation</button>
+      <button class="btn-secondary">Download Company Profile</button>
+    </div>
+    <div class="cta-grid r">
+      <div class="cta-contact-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+91 8290 830 989</span></div>
+      <div class="cta-contact-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@alphageosolution.com">info@alphageosolution.com</a></span></div>
+      <div class="cta-contact-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>405,406 Arihant Plaza, Malviya Nagar, Jaipur,302017</span></div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ══════════════════════════════════
+     PAGE: SERVICES (LISTING)
+══════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="label r">What We Do</div>
+      <h1 class="r r2">Our <span class="accent-word">Geospatial</span><br>Services</h1>
+      <p class="r r3" style="font-size:17px;color:var(--soft);line-height:1.8;margin-top:24px;max-width:560px">Six core disciplines. One unified goal — to give organisations the most accurate, actionable view of the physical world.</p>
+    </div>
+  </div>
+  <section class="services-grid section">
+    <div class="container">
+      <div class="svc-cards r">
+        <div class="svc-card" data-page="service-3d">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h3>3D Indoor & Outdoor Mapping</h3><p>High-resolution spatial models of buildings, campuses, and urban environments. We use LiDAR, structured-light scanning, and drone photogrammetry to build centimetre-accurate 3D environments used for navigation, facility management, and digital twin creation.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-3d">View Details →</a>
+        </div>
+        <div class="svc-card" data-page="service-locint">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Location Intelligence & GIS</h3><p>Analytical geospatial platforms for business insight, route planning, and site intelligence. We design GIS solutions that transform raw location data into decision-making tools across government, enterprise, and research domains.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-locint">View Details →</a>
+        </div>
+        <div class="svc-card" data-page="service-digital">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Digital Twin Development</h3><p>Physics-accurate virtual replicas of infrastructure and terrain for simulation and live monitoring. Our digital twins integrate IoT sensor streams, real-time GIS feeds, and BIM datasets into a single authoritative model.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-digital">View Details →</a>
+        </div>
+        <div class="svc-card" data-page="service-topo">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div><h3>Topographic & Cadastral Mapping</h3><p>Large-scale terrain surveys, DEM/DSM generation, and land parcel boundary documentation at sub-metre accuracy. Fully compliant with NRSC and Survey of India mapping standards for government programme delivery.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-topo">View Details →</a>
+        </div>
+        <div class="svc-card" data-page="service-aero">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><path d="M21.5 2l-19 9.5 7.5 2.5 2.5 7.5z"/><line x1="21.5" y1="2" x2="12" y2="12"/></svg></div><h3>Aerial Triangulation & Stereo Compilation</h3><p>Advanced photogrammetric processing from aerial and satellite imagery with rigorous QA/QC for national mapping programmes. We support block adjustments of 10,000+ photos with sub-pixel accuracy using state-of-the-art software pipelines.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-aero">View Details →</a>
+        </div>
+        <div class="svc-card" data-page="service-lidar">
+          <div><div class="svc-card-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>LiDAR Data Processing</h3><p>Point cloud classification, feature extraction, and derivative product generation from airborne and mobile LiDAR datasets. We deliver classified point clouds, building footprints, power-line corridor models, and terrain derivatives at scale.</p></div>
+          <a href="#" class="svc-card-link" data-page="service-lidar">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-services -->
+
+<!-- ══════════════════════════════════
+     SERVICE DETAIL PAGES (6x)
+══════════════════════════════════ -->
+<div class="page" id="page-service-3d">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 01</div>
+        <h1>3D Indoor &<br>Outdoor Mapping</h1>
+        <p style="margin-top:20px">High-resolution spatial models of buildings, campuses, and entire urban environments — built to centimetre accuracy using LiDAR, structured-light scanning, and drone photogrammetry.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">±2cm</div><div class="lbl">Positional<br>Accuracy</div></div>
+        <div class="detail-stat"><div class="val">4K</div><div class="lbl">Point Density<br>per m²</div></div>
+        <div class="detail-stat"><div class="val">200+</div><div class="lbl">Indoor Projects<br>Delivered</div></div>
+        <div class="detail-stat"><div class="val">BIM</div><div class="lbl">IFC/Revit<br>Ready Output</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <p class="body-text">Our 3D mapping service combines multiple sensor technologies to deliver the most complete representation of any physical environment — indoors or out.</p>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Terrestrial & Mobile LiDAR</h4><p>Rapid scanning of large indoor spaces and complex building facades at up to 1M points/second.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Drone Photogrammetry</h4><p>Aerial capture for roof structures, industrial facilities, and multi-level outdoor environments.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>360° Panoramic Integration</h4><p>Street-view quality imagery fused with point cloud data for immersive spatial experiences.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>BIM-Ready Deliverables</h4><p>IFC, RVT, and DWG outputs compatible with Revit, AutoCAD, and Navisworks workflows.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Indoor Navigation Datasets</h4><p>Routable floor plans and navigation graphs for smart building platforms and wayfinding apps.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <p class="body-text">Used across diverse sectors where spatial accuracy and rich 3D context are mission-critical.</p>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Airports & Transit Hubs</span><span class="app-tag">Heritage Monuments</span><span class="app-tag">Shopping Malls</span><span class="app-tag">Hospitals</span><span class="app-tag">Manufacturing Plants</span><span class="app-tag">University Campuses</span><span class="app-tag">Data Centres</span><span class="app-tag">Smart Cities</span><span class="app-tag">Defence Installations</span><span class="app-tag">Metro Stations</span>
+            </div>
+          </div>
+          <div class="testi-card r r3" style="margin-top:24px">
+            <div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div>
+            <p class="t-quote">The 3D model delivered was exceptional — every column, duct, and partition captured with sub-centimetre precision. Saved us months of as-built survey work.</p>
+            <div class="t-author"><div class="t-ava">NH</div><div><div class="t-name">NH Construction Ltd.</div><div class="t-org">AEC & Infrastructure</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-service-locint">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 02</div>
+        <h1>Location Intelligence<br>& GIS</h1>
+        <p style="margin-top:20px">Analytical geospatial platforms delivering business insights, network planning, and site intelligence — transforming raw location data into actionable decisions.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">GIS</div><div class="lbl">Full Stack<br>Platform</div></div>
+        <div class="detail-stat"><div class="val">RT</div><div class="lbl">Real-Time<br>Analytics</div></div>
+        <div class="detail-stat"><div class="val">150+</div><div class="lbl">GIS Projects<br>Delivered</div></div>
+        <div class="detail-stat"><div class="val">API</div><div class="lbl">REST/OGC<br>Integration</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <p class="body-text">We build GIS solutions that go beyond visualisation — creating analytical engines that power decisions.</p>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Spatial Data Warehousing</h4><p>Enterprise-grade geodatabases with automated ETL pipelines for multi-source data integration.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Custom GIS Application Development</h4><p>Bespoke web and mobile GIS applications on ArcGIS, QGIS, and open-source stacks.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Site Suitability Analysis</h4><p>Multi-criteria spatial analysis for optimal site selection, risk mapping, and resource allocation.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Network Analysis & Routing</h4><p>Optimal path analysis, service area modelling, and logistics network optimisation.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Dashboard & Reporting</h4><p>Interactive geospatial dashboards with KPI integration and executive reporting modules.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <p class="body-text">Intelligence-driven geospatial tools for government planners, enterprises, and research institutions.</p>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Urban Planners</span><span class="app-tag">Telecom Companies</span><span class="app-tag">Logistics Firms</span><span class="app-tag">Public Health</span><span class="app-tag">Retail Chains</span><span class="app-tag">Insurance</span><span class="app-tag">Agriculture</span><span class="app-tag">Election Commissions</span><span class="app-tag">Utilities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-service-digital">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 03</div>
+        <h1>Digital Twin<br>Development</h1>
+        <p style="margin-top:20px">Physics-accurate virtual replicas of infrastructure and terrain for simulation, live monitoring, and long-range planning — the future of built environment management.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">IoT</div><div class="lbl">Live Sensor<br>Integration</div></div>
+        <div class="detail-stat"><div class="val">RT</div><div class="lbl">Real-Time<br>Sync</div></div>
+        <div class="detail-stat"><div class="val">BIM</div><div class="lbl">Full BIM<br>Integration</div></div>
+        <div class="detail-stat"><div class="val">AI</div><div class="lbl">Predictive<br>Analytics</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <p class="body-text">Our digital twins are living models — continuously updated with real-world data to reflect current operational state.</p>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>3D Geospatial Foundation</h4><p>Built on survey-grade 3D models with centimetre accuracy as the authoritative spatial base.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>IoT Sensor Integration</h4><p>Real-time feeds from structural monitors, environmental sensors, and SCADA systems.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Simulation & Scenario Planning</h4><p>Run what-if scenarios for emergency response, capacity planning, and infrastructure upgrades.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>AI-Driven Predictive Maintenance</h4><p>Machine learning models predict equipment failure and maintenance windows from sensor data.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <p class="body-text">Digital twins for smart cities, critical infrastructure, and industrial operations.</p>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Smart City Authorities</span><span class="app-tag">Power Plants</span><span class="app-tag">Airport Operators</span><span class="app-tag">Port Authorities</span><span class="app-tag">Railway Networks</span><span class="app-tag">Industrial Plants</span><span class="app-tag">Defence Bases</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-service-topo">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 04</div>
+        <h1>Topographic &<br>Cadastral Mapping</h1>
+        <p style="margin-top:20px">Large-scale terrain surveys, DEM/DSM generation, and land parcel boundary documentation at sub-metre accuracy — fully compliant with Survey of India and NRSC standards.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">±0.5m</div><div class="lbl">Contour<br>Accuracy</div></div>
+        <div class="detail-stat"><div class="val">1:500</div><div class="lbl">Map Scale<br>Capability</div></div>
+        <div class="detail-stat"><div class="val">10M+</div><div class="lbl">Hectares<br>Mapped</div></div>
+        <div class="detail-stat"><div class="val">SOI</div><div class="lbl">Survey of India<br>Compliant</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <p class="body-text">End-to-end topographic and land record mapping services for government and infrastructure programmes.</p>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>DEM & DSM Generation</h4><p>High-resolution Digital Elevation and Surface Models from aerial photogrammetry and LiDAR.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Land Parcel Documentation</h4><p>Accurate cadastral boundary surveys with GPS-CORS control for revenue and legal purposes.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Contour Mapping</h4><p>1m and 0.5m interval contours for engineering design and infrastructure corridor planning.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Feature Extraction</h4><p>Roads, water bodies, vegetation, and built structures extracted to national topographic standards.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Revenue Departments</span><span class="app-tag">State Land Records</span><span class="app-tag">Irrigation Authorities</span><span class="app-tag">NHAI / Road Projects</span><span class="app-tag">Forest Departments</span><span class="app-tag">Flood Management</span><span class="app-tag">Defence Mapping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-service-aero">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 05</div>
+        <h1>Aerial Triangulation<br>& Stereo Compilation</h1>
+        <p style="margin-top:20px">Advanced photogrammetric processing for aerial and satellite imagery — supporting national mapping programmes with sub-pixel accuracy and ISO-compliant QA/QC workflows.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">0.3px</div><div class="lbl">RMSE<br>Accuracy</div></div>
+        <div class="detail-stat"><div class="val">10K+</div><div class="lbl">Photos per<br>Block</div></div>
+        <div class="detail-stat"><div class="val">SAT</div><div class="lbl">Satellite<br>Compatible</div></div>
+        <div class="detail-stat"><div class="val">ISO</div><div class="lbl">Certified<br>Workflow</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Block Adjustment</h4><p>Rigorous aerotriangulation supporting large-scale blocks with automatic tie point generation.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Satellite Sensor Models</h4><p>RPC-based processing for WorldView, Cartosat, IKONOS, and Pleiades satellite sensors.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Stereo Model Compilation</h4><p>Manual and automated stereo compilation for planimetric and height data at 1:1000 to 1:10,000 scale.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Orthoimage Generation</h4><p>True and colour-balanced orthophotos with seamline editing for seamless mosaic deliverables.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Survey of India</span><span class="app-tag">ISRO / NRSC</span><span class="app-tag">State Remote Sensing Centres</span><span class="app-tag">Defence Mapping</span><span class="app-tag">NMAs</span><span class="app-tag">Academic Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-service-lidar">
+  <div class="container">
+    <div class="detail-hero r">
+      <div class="detail-hero-left">
+        <a href="#" class="back-link" data-page="services"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg> Back to Services</a>
+        <div class="label">Service 06</div>
+        <h1>LiDAR Data<br>Processing</h1>
+        <p style="margin-top:20px">Point cloud classification, feature extraction, and derivative product generation from airborne and mobile LiDAR datasets — delivered at scale, with full ISO-compliant QA.</p>
+        <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn-primary" data-page="contact">Get a Quote</button><button class="btn-secondary">Download Brochure</button></div>
+      </div>
+      <div class="detail-hero-right">
+        <div class="detail-stat"><div class="val">1B+</div><div class="lbl">Points<br>Processed</div></div>
+        <div class="detail-stat"><div class="val">±5cm</div><div class="lbl">Vertical<br>Accuracy</div></div>
+        <div class="detail-stat"><div class="val">Auto</div><div class="lbl">ML-Driven<br>Classification</div></div>
+        <div class="detail-stat"><div class="val">LAS</div><div class="lbl">LAS/LAZ<br>Delivery</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="detail-body section">
+    <div class="container">
+      <div class="detail-cols">
+        <div>
+          <div class="label">Key Features</div>
+          <div class="detail-features r">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Automated Point Cloud Classification</h4><p>ML-driven classification of ground, vegetation, buildings, power lines, and noise at scale.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Building Footprint Extraction</h4><p>Accurate 2D and 3D building models extracted from airborne LiDAR for urban mapping.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Power Line Corridor Analysis</h4><p>Conductor sag detection, tower height extraction, and clearance violation mapping.</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Bare Earth DEM</h4><p>High-accuracy bare earth terrain models after full ground filtering and noise removal.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Applications</div>
+          <div class="applications-panel r r2">
+            <h3>Who Uses This</h3>
+            <div class="app-tags">
+              <span class="app-tag">Power Utilities</span><span class="app-tag">Forestry Depts.</span><span class="app-tag">Flood Modelling</span><span class="app-tag">Road Authorities</span><span class="app-tag">Mining Companies</span><span class="app-tag">Smart City Planners</span><span class="app-tag">Coastal Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE: TEAM
+══════════════════════════════════ -->
+<div class="page" id="page-team">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="label r">The People</div>
+      <h1 class="r r2">Meet Our <span class="accent-word">Expert</span><br>Team</h1>
+      <p class="r r3" style="font-size:17px;color:var(--soft);line-height:1.8;margin-top:24px;max-width:540px">A world-class team of geospatial engineers, data scientists, and GIS specialists — united by a passion for precision.</p>
+    </div>
+  </div>
+  <section class="section" style="padding:0 0 120px">
+    <div class="container">
+      <div class="team-grid r">
+        <!-- Founders row -->
+        <div class="team-founder-row">
+          <div class="team-founder">
+            <div class="team-avatar"> <img src="image/photo.jpg" alt="Divya Swarnkar"></div>
+            <div class="team-name">Divya Swarnkar</div>
+            <div class="team-role">Founder & CEO</div>
+            <p class="team-bio">Visionary entrepreneur and geospatial expert with 7+ years of experience delivering large-scale mapping programmes for government agencies and Fortune 15 clients. She founded Alpha Geo Solution with the mission to democratise access to precision spatial data.</p>
+            <span class="team-exp"><span class="team-exp-dot"></span>7+ Years Experience</span>
+          </div>
+          <div class="team-founder" style="background:var(--surface)">
+            <div class="team-avatar alt">RV</div>
+            <div class="team-name">Ram Yadav</div>
+            <div class="team-role">CTO</div>
+            <p class="team-bio">Photogrammetry and remote sensing specialist with a background in ISRO research. Ram leads our technical operations and R&D division, driving innovation in automated point cloud processing and digital twin development pipelines.</p>
+            <span class="team-exp"><span class="team-exp-dot"></span>2+ Years Experience</span>
+          </div>
+        </div>
+        <!-- Rest of team -->
+        <div class="team-card">
+          <div class="team-avatar alt2">SS</div>
+          <div class="team-name">Sahil Singh</div>
+          <div class="team-role">Head of GIS Solutions</div>
+          <p class="team-bio">ArcGIS-certified enterprise GIS architect with deep expertise in building spatial analytics platforms for urban planning and telecom industries.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>12 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt3">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">LiDAR & Remote Sensing Lead</div>
+          <p class="team-bio">Specialist in airborne LiDAR processing and satellite image analysis. Delivered point cloud processing for 5M+ hectares across national mapping projects.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>10 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt4">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">Project Delivery Manager</div>
+          <p class="team-bio">PMP-certified project manager with a track record of on-time delivery for complex multi-site geospatial programmes with government and private clients.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>11 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt5">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">Digital Twin Architect</div>
+          <p class="team-bio">Software engineer and 3D spatial data specialist. Leads the development of real-time digital twin platforms integrating IoT sensor streams with survey-grade 3D models.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>9 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">Photogrammetry Specialist</div>
+          <p class="team-bio">Expert in aerial triangulation and stereo compilation, having processed imagery for Survey of India national programmes and NRSC satellite mapping initiatives.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>8 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">Field Survey Engineer</div>
+          <p class="team-bio">Ground truth and field operations specialist with expertise in GPS-CORS networks, total station surveys, and UAV flight operations for large-scale corridor projects.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>7 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt2">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">Business Development</div>
+          <p class="team-bio">Leads client relationships and strategic partnerships across government ministries, PSUs, and private infrastructure companies. Manages the full bid-to-delivery cycle.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>8 Years Experience</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar alt3">-</div>
+          <div class="team-name">-</div>
+          <div class="team-role">QA/QC Lead</div>
+          <p class="team-bio">ISO 9001-certified quality manager responsible for all data accuracy verification, deliverable compliance checks, and international standard adherence across every project.</p>
+          <span class="team-exp"><span class="team-exp-dot"></span>13 Years Experience</span>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div style="margin-top:120px">
+        <div class="r" style="text-align:center"><div class="label" style="justify-content:center">What Drives Us</div></div>
+        <h2 class="display r r2" style="text-align:center;margin-bottom:0">Our Core Values</h2>
+        <div class="values-grid r r3">
+          <div class="value-card"><div class="value-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Precision First</h3><p>We hold ourselves to the highest accuracy standards — not because we have to, but because our clients' decisions depend on it.</p></div>
+          <div class="value-card"><div class="value-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Client Partnership</h3><p>We embed ourselves in our clients' workflows, understanding their challenges before proposing solutions.</p></div>
+          <div class="value-card"><div class="value-ico"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div><h3>Continuous Innovation</h3><p>We invest in R&D, automation, and AI to stay at the frontier of what's possible in geospatial data.</p></div>
+          <div class="value-card"><div class="value-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Ethical Data Practice</h3><p>We handle sensitive geospatial data with the utmost care, maintaining strict data governance and confidentiality protocols.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-team -->
+
+<!-- ══════════════════════════════════
+     PAGE: CLIENTS
+══════════════════════════════════ -->
+<div class="page" id="page-clients">
+  <div class="page-hero" style="text-align:center">
+    <div class="page-hero-inner" style="margin:0 auto">
+      <div class="label r" style="justify-content:center">Who We Serve</div>
+      <h1 class="r r2" style="text-align:center"><span class="accent-word">Government</span> &<br>Private Clients</h1>
+      <p class="r r3" style="font-size:17px;color:var(--soft);line-height:1.8;margin-top:24px;text-align:center">We serve two worlds with equal dedication — the rigour of government programmes and the agility of private enterprise.</p>
+    </div>
+  </div>
+  <section class="section" style="padding:0 0 120px">
+    <div class="container">
+      <!-- TABS -->
+      <div class="clients-tabs r">
+        <button class="clients-tab active" data-tab="gov">🏛️ &nbsp; Government & PSU</button>
+        <button class="clients-tab" data-tab="priv">🏢 &nbsp; Private Enterprise</button>
+      </div>
+
+      <!-- GOVERNMENT TAB -->
+      <div class="client-segment active" id="tab-gov">
+        <div class="gov-hero-banner r">
+          <div>
+            <div class="label">Government & PSU Division</div>
+            <h2>Mapping India's<br>Future Infrastructure</h2>
+            <p style="margin-top:16px">We are an empanelled vendor with multiple central and state government agencies, delivering survey-grade geospatial data for critical national programmes — from highway corridors to cadastral records.</p>
+            <div style="margin-top:28px;display:flex;gap:12px"><button class="btn-primary" data-page="contact">Request Government Quote</button></div>
+          </div>
+          <div class="gov-badges">
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="gov-badge-text">Empanelled Vendor<span>Central & State Governments</span></div></div>
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="gov-badge-text">ISO 9001:2015 Certified<span>Quality Management System</span></div></div>
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="gov-badge-text">GeM Portal Listed<span>Government e-Marketplace</span></div></div>
+          </div>
+        </div>
+
+        <!-- GOV CLIENTS LOGOS -->
+        <div class="label r">Key Government Clients</div>
+        <div class="client-logos-grid r r2">
+          <div class="client-logo-cell"><div class="client-logo-abbr">SOI</div><div class="client-logo-name">Survey of India</div><div class="client-logo-dept">National Mapping Agency</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">NRSC</div><div class="client-logo-name">NRSC / ISRO</div><div class="client-logo-dept">Remote Sensing</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">MoR</div><div class="client-logo-name">Ministry of Railways</div><div class="client-logo-dept">Corridor Mapping</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">NHAI</div><div class="client-logo-name">NHAI</div><div class="client-logo-dept">Highway Surveys</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">JDA</div><div class="client-logo-name">Jaipur Dev. Authority</div><div class="client-logo-dept">Urban Planning</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">ASI</div><div class="client-logo-name">Archaeological Survey</div><div class="client-logo-dept">Heritage Mapping</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">GoR</div><div class="client-logo-name">Govt. of Rajasthan</div><div class="client-logo-dept">Revenue Dept.</div></div>
+          <div class="client-logo-cell"><div class="client-logo-abbr">CWC</div><div class="client-logo-name">Central Water Commission</div><div class="client-logo-dept">Watershed Surveys</div></div>
+        </div>
+
+        <!-- CASE STUDIES -->
+        <div class="label r">Case Studies</div>
+        <div class="case-studies r r2">
+          <div class="case-study-card">
+            <div>
+              <span class="cs-tag">Survey of India</span>
+              <h3>National Topographic Mapping Programme — Rajasthan Block</h3>
+              <p>Aerial triangulation and stereo compilation of 8,000+ aerial photos covering 120,000 sq km of Rajasthan at 1:10,000 scale. Delivered under strict SOI accuracy specifications with ISO QA/QC documentation.</p>
+            </div>
+            <div class="cs-outcome"><div class="cs-outcome-val">120K</div><div class="cs-outcome-label">sq km<br>mapped</div></div>
+          </div>
+          <div class="case-study-card">
+            <div>
+              <span class="cs-tag">Ministry of Railways</span>
+              <h3>Railway Corridor LiDAR Survey — Western Railway Zone</h3>
+              <p>Mobile LiDAR survey of 1,400 km of railway corridor for asset management, clearance profiling, and track geometry analysis. Delivered classified point clouds and 3D feature models.</p>
+            </div>
+            <div class="cs-outcome"><div class="cs-outcome-val">1,400</div><div class="cs-outcome-label">km<br>surveyed</div></div>
+          </div>
+          <div class="case-study-card">
+            <div>
+              <span class="cs-tag">Jaipur Development Authority</span>
+              <h3>Smart City 3D Urban Model — Jaipur City Master Plan</h3>
+              <p>Complete 3D building model and topographic survey of Jaipur city covering 467 sq km for the Smart City Mission. Delivered LOD2 building models integrated into a WebGIS planning platform.</p>
+            </div>
+            <div class="cs-outcome"><div class="cs-outcome-val">467</div><div class="cs-outcome-label">sq km<br>3D modelled</div></div>
+          </div>
+        </div>
+
+        <!-- GOV TESTIMONIALS -->
+        <div class="testi-grid r">
+          <div class="testi-card"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Accurate, timely, and thoroughly professional. Alpha Geo Solution exceeded our expectations in every survey project — a truly reliable long-term strategic partner for national mapping.</p><div class="t-author"><div class="t-ava"><img src="image/SOI.png" alt="Survey of India Logo"></div><div><div class="t-name">Survey of India</div><div class="t-org">National Mapping Organisation</div></div></div></div>
+          <div class="testi-card"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Their advanced geospatial services streamlined our infrastructure development with accurate, detailed mapping that integrated seamlessly across all our platforms and workflows.</p><div class="t-author"><div class="t-ava"><img src="image/Railways.svg" alt="Railway Department Logo"></div><div><div class="t-name">Railway Department</div><div class="t-org">Ministry of Railways, India</div></div></div></div>
+        </div>
+      </div>
+
+      <!-- PRIVATE TAB -->
+      <div class="client-segment" id="tab-priv">
+        <div class="gov-hero-banner r" style="background:var(--panel)">
+          <div>
+            <div class="label">Private Enterprise Division</div>
+            <h2>Geospatial Intelligence<br>for Business Growth</h2>
+            <p style="margin-top:16px">We bring the same precision and depth we deliver to national programmes to the fast-moving world of private enterprise — with the agility, custom solutions, and turnaround times that business demands.</p>
+            <div style="margin-top:28px;display:flex;gap:12px"><button class="btn-primary" data-page="contact">Talk to Our Team</button></div>
+          </div>
+          <div class="gov-badges">
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="gov-badge-text">Fast Turnaround<span>Agile project delivery for business timelines</span></div></div>
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10z"/></svg></div><div class="gov-badge-text">NDA-Protected<span>Full data confidentiality guaranteed</span></div></div>
+            <div class="gov-badge"><div class="gov-badge-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="gov-badge-text">Custom SLA<span>Tailored service agreements for your needs</span></div></div>
+          </div>
+        </div>
+
+        <!-- WHAT WE OFFER PRIVATE -->
+        <div class="label r">What We Offer Private Clients</div>
+        <div class="private-features r r2">
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><h3>Digital Twin for Facilities</h3><p>Real-time digital replicas of factories, warehouses, campuses, and commercial buildings for operations, maintenance, and safety management.</p></div>
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Site Surveys for AEC</h3><p>Pre-construction topographic surveys, BIM as-built models, and progress monitoring throughout construction for architects, engineers, and developers.</p></div>
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>Mining Volumetrics</h3><p>Stockpile volume calculations, pit progress monitoring, and exploration mapping using drone photogrammetry and LiDAR for mining companies.</p></div>
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div><h3>Retail & Real Estate GIS</h3><p>Site suitability analysis, trade area mapping, and catchment analytics for retail expansion, property development, and investment decisions.</p></div>
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Telecom Network Planning</h3><p>LOS analysis, tower siting, coverage mapping, and fibre route planning for telecom operators and ISPs expanding network footprint.</p></div>
+          <div class="priv-feat"><div class="priv-feat-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Environmental Impact</h3><p>Vegetation analysis, watershed modelling, and environmental baseline surveys for EIA reports and sustainability assessments.</p></div>
+        </div>
+
+        <!-- INDUSTRIES GRID -->
+        <div class="label r">Private Industries We Serve</div>
+        <div class="industries-served r r2">
+          <div class="ind-row"><div class="ind-row-n">01</div><div class="ind-row-text"><h4>Real Estate & Developers</h4><p>Site surveys, 3D models, and land records for project development</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">02</div><div class="ind-row-text"><h4>Mining & Natural Resources</h4><p>Volumetrics, exploration mapping, and safety monitoring</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">03</div><div class="ind-row-text"><h4>Telecom & ISP</h4><p>Network planning, tower siting, and fibre corridor analysis</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">04</div><div class="ind-row-text"><h4>Oil & Gas</h4><p>Pipeline corridor mapping, facility surveys, and spill impact modelling</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">05</div><div class="ind-row-text"><h4>AEC & Engineering</h4><p>BIM surveys, as-built models, and construction monitoring</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">06</div><div class="ind-row-text"><h4>Agriculture & AgTech</h4><p>Crop health mapping, precision agriculture, and irrigation planning</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">07</div><div class="ind-row-text"><h4>Logistics & Supply Chain</h4><p>Warehouse surveys, route optimisation, and facility digital twins</p></div><div class="ind-row-arrow">↗</div></div>
+          <div class="ind-row"><div class="ind-row-n">08</div><div class="ind-row-text"><h4>Insurance & Risk</h4><p>Property risk assessment, flood exposure mapping, and claims support</p></div><div class="ind-row-arrow">↗</div></div>
+        </div>
+
+        <!-- PRIVATE TESTIMONIALS -->
+        <div class="testi-grid r">
+          <div class="testi-card"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">The 3D model of our manufacturing facility was delivered in 3 weeks — absolutely stunning accuracy. It transformed how our maintenance team plans interventions and cuts costs.</p><div class="t-author"><div class="t-ava">LH</div><div><div class="t-name">Laxmi Heavy Industries</div><div class="t-org">Manufacturing — Pune</div></div></div></div>
+          <div class="testi-card"><div class="t-stars"><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div></div><p class="t-quote">Their GIS site suitability analysis helped us identify 12 expansion locations in 6 months. The data quality and analytical depth was far beyond any other vendor we evaluated.</p><div class="t-author"><div class="t-ava">RL</div><div><div class="t-name">Reliance Retail</div><div class="t-org">Retail Expansion Team</div></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-clients -->
+
+<!-- ══════════════════════════════════
+     PAGE: ABOUT
+══════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="about-page-hero">
+    <div>
+      <div class="label r">Our Story</div>
+      <h1 class="r r2" style="font-family:var(--display);font-size:clamp(40px,5vw,68px);font-weight:900;line-height:.95;letter-spacing:-2px;margin-bottom:24px">Built on Precision.<br>Driven by <em style="font-style:italic;color:var(--glow)">Innovation.</em></h1>
+      <p class="r r3" style="font-size:16px;color:var(--soft);line-height:1.85;max-width:480px">Alpha Geo Solution was founded with a single ambition — to make the highest quality geospatial intelligence accessible to every organisation that depends on location data.</p>
+      <div class="r r4" style="margin-top:36px;display:flex;gap:12px">
+        <button class="btn-primary" data-page="contact">Get in Touch</button>
+        <button class="btn-secondary" data-page="team">Meet the Team →</button>
+      </div>
+    </div>
+    <div class="r r2">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div class="detail-stat" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px"><div class="val" style="font-family:var(--display);font-size:40px;font-weight:900;color:var(--glow);line-height:1">2023</div><div class="lbl" style="font-size:12px;color:var(--muted);margin-top:8px">Founded in<br>Jaipur, India</div></div>
+        <div class="detail-stat" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px"><div class="val" style="font-family:var(--display);font-size:40px;font-weight:900;color:var(--glow);line-height:1">ISO</div><div class="lbl" style="font-size:12px;color:var(--muted);margin-top:8px">9001:2015<br>Certified</div></div>
+        <div class="detail-stat" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px"><div class="val" style="font-family:var(--display);font-size:40px;font-weight:900;color:var(--glow);line-height:1">50+</div><div class="lbl" style="font-size:12px;color:var(--muted);margin-top:8px">Geospatial<br>Experts</div></div>
+        <div class="detail-stat" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px"><div class="val" style="font-family:var(--display);font-size:40px;font-weight:900;color:var(--glow);line-height:1">23+</div><div class="lbl" style="font-size:12px;color:var(--muted);margin-top:8px">Countries<br>Served</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="section" style="padding:80px 0 120px;border-top:1px solid var(--border)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px">
+        <div>
+          <div class="label r">Company Journey</div>
+          <div class="timeline r r2">
+            <div class="timeline-inner">
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2023</div><div class="timeline-title">Founded in Jaipur</div><div class="timeline-desc">Alpha Geo Solution established as a photogrammetry and GIS services firm. First major project — topographic survey for Rajasthan Revenue Department.</div></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2025</div><div class="timeline-title">Survey of India Empanelment</div><div class="timeline-desc">Became an empanelled vendor with Survey of India, marking our entry into national mapping programmes and setting the quality benchmark for all future work.</div></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2026</div><div class="timeline-title">LiDAR Division Launched</div><div class="timeline-desc">Invested in state-of-the-art LiDAR processing infrastructure, enabling us to handle national-scale point cloud datasets and corridor surveys.</div></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2026</div><div class="timeline-title">ISO 9001:2015 Certification</div><div class="timeline-desc">Achieved ISO 9001:2015 certification for our quality management system — formalising the precision-first culture that defines every project we deliver.</div></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2026</div><div class="timeline-title">Digital Twin Practice Launched</div><div class="timeline-desc">Established our Digital Twin & IoT integration practice, expanding beyond data production into real-time spatial intelligence for smart cities and industrial clients.</div></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2026</div><div class="timeline-title">International Expansion</div><div class="timeline-desc">Active projects in the UAE, Saudi Arabia, and South-East Asia. 150+ global clients across 23 countries with 500+ projects delivered.</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="label r r2">Technology Stack</div>
+          <p class="body-text r r3" style="margin-bottom:36px">We invest in best-in-class geospatial technology — ensuring our team always has the right tools to deliver to the highest standard.</p>
+          <div class="detail-features r r4" style="margin-top:0">
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Photogrammetry</h4><p>Inpho, Metashape, Pix4D, LPS — for aerial and UAV image processing</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>LiDAR</h4><p>TerraScan, LAStools, CloudCompare, PDAL — for point cloud processing</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>GIS Platforms</h4><p>ArcGIS, QGIS, FME, PostGIS — for spatial data management and analysis</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>3D & BIM</h4><p>Revit, AutoCAD, SketchUp, Cesium — for 3D modelling and visualisation</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Digital Twin</h4><p>Unity 3D, Unreal Engine, AWS IoT, Azure Digital Twins</p></div></div>
+            <div class="detail-feat"><div class="detail-feat-dot"></div><div class="detail-feat-text"><h4>Cloud & DevOps</h4><p>AWS, Azure, Google Cloud, Kubernetes — for scalable data delivery</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+<!-- ══════════════════════════════════
+     PAGE: CONTACT
+══════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="label r">Get in Touch</div>
+      <h1 class="r r2">Let's <span class="accent-word">Map</span><br>Your Project.</h1>
+      <p class="r r3" style="font-size:17px;color:var(--soft);line-height:1.8;margin-top:24px;max-width:500px">Tell us about your geospatial challenge. Our expert team responds within 24 hours with a tailored proposal.</p>
+    </div>
+  </div>
+  <section class="section" style="padding:0 0 120px">
+    <div class="container">
+      <div class="contact-layout r">
+        <div class="contact-info">
+          <h2>Direct<br>Contact</h2>
+          <p style="margin-top:16px">Reach us directly or fill in the form and we'll get back to you within one business day.</p>
+          <div class="contact-details" style="margin-top:40px">
+            <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="contact-detail-text"><strong>Phone</strong><span>+91 8290 830 989</span></div></div>
+            <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="contact-detail-text"><strong>Email</strong><span><a href="mailto:info@alphageosolution.com">info@alphageosolution.com</a></span></div></div>
+            <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="contact-detail-text"><strong>Address</strong><span>405,406 Arihant Plaza, Malviya Nagar, Jaipur,302017</span></div></div>
+            <div class="contact-detail-item"><div class="contact-detail-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="contact-detail-text"><strong>Office Hours</strong><span>Monday – Saturday, 9:00 AM – 6:00 PM IST</span></div></div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <p>We'll respond within 24 hours with a tailored proposal.</p>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" placeholder="Rahul"></div>
+            <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" placeholder="Sharma"></div>
+          </div>
+          <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="rahul@company.com"></div>
+          <div class="form-group"><label class="form-label">Organisation</label><input class="form-input" type="text" placeholder="Company / Ministry / Department"></div>
+          <div class="form-group"><label class="form-label">Client Type</label>
+            <select class="form-select form-input">
+              <option value="">Select client type...</option>
+              <option>Government Agency / Ministry</option>
+              <option>PSU / Public Sector</option>
+              <option>Private Company</option>
+              <option>Research / Academic</option>
+              <option>International Client</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label">Service Required</label>
+            <select class="form-select form-input">
+              <option value="">Select service...</option>
+              <option>3D Indoor & Outdoor Mapping</option>
+              <option>Location Intelligence & GIS</option>
+              <option>Digital Twin Development</option>
+              <option>Topographic & Cadastral Mapping</option>
+              <option>Aerial Triangulation</option>
+              <option>LiDAR Data Processing</option>
+              <option>Multiple / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label">Project Brief</label><textarea class="form-textarea" placeholder="Describe your project — area size, timeline, deliverables, and any specific requirements..."></textarea></div>
+          <button class="form-submit">Send Enquiry →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+<!-- ══════════════════════════════════
+     FOOTER (always visible)
+══════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="f-logo-row">
+        <div class="f-logo-emblem"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15.5" stroke="rgba(255,255,255,0.1)"/><circle cx="16" cy="16" r="9" stroke="rgba(0,180,255,0.3)"/><circle cx="16" cy="16" r="4" fill="#1a6fff"/><circle cx="16" cy="16" r="2" fill="#00b4ff"/></svg></div>
+        <span class="f-brand-name">Alpha Geo Solution</span>
+      </div>
+      <p class="f-tagline">A globally recognised leader in digital geospatial information, 3D mapping, and location intelligence — headquartered in Jaipur, India.</p>
+      <div class="f-socials">
+  <a class="f-soc" href="https://www.linkedin.com/company/alpha-geo-solutions" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect x="2" y="9" width="4" height="12"/>
+      <circle cx="4" cy="4" r="2"/>
+    </svg>
+  </a>
+
+  <a class="f-soc" href="https://x.com/AlGeSo2023" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+    <svg viewBox="0 0 24 24">
+      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+    </svg>
+  </a>
+
+  <a class="f-soc" href="https://www.instagram.com/alphageosolution/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </svg>
+  </a>
+</div>
+    </div>
+    <div class="f-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#" data-page="service-3d">3D Indoor Mapping</a></li>
+        <li><a href="#" data-page="service-locint">Location Intelligence</a></li>
+        <li><a href="#" data-page="service-digital">Digital Twin</a></li>
+        <li><a href="#" data-page="service-topo">Topographic Mapping</a></li>
+        <li><a href="#" data-page="service-aero">Aerial Triangulation</a></li>
+        <li><a href="#" data-page="service-lidar">LiDAR Processing</a></li>
+        <li><a href="#" data-page="service-BIM">BIM Modelling</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#" data-page="about">About Us</a></li>
+        <li><a href="#" data-page="team">Our Team</a></li>
+        <li><a href="#" data-page="clients">Clients</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+91 8290 830 989">+91 8290 830 989</a></li>
+        <li><a href="mailto:info@alphageosolution.com">info@alphageosolution.com</a></li>
+        <li><a href="#">405, 406 Arihant Plaza</a></li>
+        <li><a href="#">Malviya Nagar, Jaipur</a></li>
+        <li><a href="#">Rajasthan 302017</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span class="f-copy">© 2025 Alpha Geo Solution Pvt. Ltd. All rights reserved.</span>
+    <div class="f-badges">
+      <div class="f-badge"><span class="f-badge-dot"></span>ISO 9001:2015</div>
+      <div class="f-badge"><span class="f-badge-dot"></span>Govt. Approved Vendor</div>
+      <div class="f-badge"><span class="f-badge-dot"></span>GeM Listed</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/911414791165" class="wa" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
